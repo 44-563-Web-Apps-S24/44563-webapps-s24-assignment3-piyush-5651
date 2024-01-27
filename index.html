@@ -40,7 +40,7 @@
 
     <hr />
 
-    <h2>Preference table </h1>
+    <h2>Preference table </h2>
     <p>In this table I will be adding my persnol favorite media item, why I love that and their authors/creater.</p>
 
     <table border=1>
@@ -56,7 +56,8 @@
         </tr>
         <tr>
             <td>THE CITY INSIDE (Book) </td>
-            <td>The book perfectly articulates the foreboding in the current political and social climate of India.</td>
+            <td>The book perfectly articulates the foreboding in the current political and social climate of India.
+            </td>
             <td>Samit Basu </td>
         </tr>
         <tr>
@@ -71,6 +72,24 @@
         </tr>
     </table>
 
+    <hr />
+
+    <h2>Code Fencing</h2>
+    <p>The provided code defines a decorator singleton that can be used to create singleton classes in Python. A
+        singleton class is a class that allows only one instance of itself to be created. </p>
+    <pre>
+def singleton(myClass):
+        instances = {}
+        def getInstance(*args, **kwargs):
+                if myClass not in instances:
+                        instances[myClass] = myClass(*args, **kwargs)
+                return instances[myClass]
+        return getInstance  
+@singleton
+class TestClass(object):
+        pass 
+    </pre>
+    <p>For code reference, visit <a href="https://code.pieces.app/collections/python">code snippet</a>.</p>
 </body>
 
 </html>
